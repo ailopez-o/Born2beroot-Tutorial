@@ -450,6 +450,8 @@ enforce_for_root
 ```
 ➤ This is how the line must be↙️
 
+**_this image miss lcredi=-1, be careful when you write this_**
+
 <img width="1127" alt="Captura de pantalla 2022-07-16 a las 3 34 33" src="https://user-images.githubusercontent.com/66915274/179329511-0619183a-8ccc-456b-8f27-3962fc542cc3.png">
 
 ➤ This is how the file must look ↙️
@@ -1138,6 +1140,10 @@ Brief description of all types of partitions:
 <img width="361" alt="Screen Shot 2022-11-18 at 2 45 53 PM" src="https://user-images.githubusercontent.com/66915274/202719112-c238f259-2a59-41ea-bbaa-8676742b2ef2.png">
 
 3 ◦ Once we are in the path /var/www/ we must download the latest version of WordPress. As my native language is Spanish I will select the latest version in Spanish. We will use the following command: ```sudo wget https://es.wordpress.org/latest-es_ES.zip```.
+
+_**if you want an English version, the link is https://en-gb.wordpress.org/latest-en_GB.zip**_
+
+_**so use command:**_ `sudo wget https://en-gb.wordpress.org/latest-en_GB.zip`
 
 <img width="779" alt="Screen Shot 2022-11-18 at 2 47 00 PM" src="https://user-images.githubusercontent.com/66915274/202719349-442e9fd5-f96a-48af-8d7a-ea8a91a4d380.png">
 
