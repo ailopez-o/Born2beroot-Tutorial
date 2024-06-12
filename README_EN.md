@@ -1143,11 +1143,13 @@ Brief description of all types of partitions:
 
 _**if you want an English version, the link is https://en-gb.wordpress.org/latest-en_GB.zip**_
 
-_**so use command:**_ `sudo wget https://en-gb.wordpress.org/latest-en_GB.zip`
+_**So use command:**_ ```sudo wget https://en-gb.wordpress.org/latest-en_GB.zip```
 
 <img width="779" alt="Screen Shot 2022-11-18 at 2 47 00 PM" src="https://user-images.githubusercontent.com/66915274/202719349-442e9fd5-f96a-48af-8d7a-ea8a91a4d380.png">
 
 4 ◦ Unzip the file you just downloaded with the command ```sudo unzip latest-en_US.zip```.
+
+_**For English version:**_```sudo unzip latest-en_GB.zip```
 
 <img width="444" alt="Screen Shot 2022-11-18 at 2 47 25 PM" src="https://user-images.githubusercontent.com/66915274/202719435-99d6af72-98f4-47b0-befb-0f3e45db4520.png">
 
