@@ -476,6 +476,22 @@ difok=7 ➤ The password it have to containt at least seven diferent characters 
 
 enforce_for_root ➤ We will implement this password policy to root.
 
+6 ◦ Now this password policy only applies to new users created later or change a new password. For the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
+
+Use command: ```sudo chage -l <username>``` to check the password of a user
+
+The defualt minimun days between password change is 0, and maximun days is 9999. So it is different with our password policy.
+
+need a clip here
+
+Use command: ```sudo chage -m <time> <username>``` and ```sudo chage -M <time> <username>``` to modify the days between password change.
+
+-m is minimun days, should be 2 days; -M is maximun days, shoule be 30 days.
+
+Then check it again.
+
+need a clip here
+
 ### 4.6 Connecting via SSH 🗣
 
 1 ◦ If we want to connect via SSH we must close the machine and go to settings.
