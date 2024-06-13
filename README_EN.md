@@ -1648,6 +1648,37 @@ Si queremos que vuelva a ejecutarse:
 
 <img width="483" alt="Screen Shot 2022-11-24 at 3 27 38 PM" src="https://user-images.githubusercontent.com/66915274/203807970-8fc69a39-6d10-4e64-9be1-eb49c4bf95f8.png">
 
+_**if the command is not work (not work in my VM), there is another way match with correction sheet better**_
+
+Use ```sudo service cron status``` to check the current status of cron, it should be like: (see the green enabled and active)
+
+<img width="1201" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/74ed50b7-01f7-47c8-b941-74e0ffd616df">
+
+If you want to stop cron, the command is ```sudo systemctl stop cron```, check cron status as:(inactive)
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e507f381-1ac6-457e-a832-39fcae19113e">
+
+Now the cron will stop temporarily, if you reboot VM, the cron will restart. 
+
+Or use command to restart it: ```sudo systemctl start cron``` :
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/800bc3b9-7301-4c66-87a6-318a57a7567c">
+
+In evaluation, you may need to stop the cron forever, and after reboot VM, cron should remain disabled. 
+
+To do this, use command: ```sudo systemctl disable cron```, it will be disabled but active, because I didn't stop cron since now.
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/d0dd42df-36af-478e-92bb-4b5a61022a3a">
+
+Then if you reboot VM, cron.service will be disabled and inactive.
+
+<img width="983" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/45cafbd0-e07b-44ec-9428-41ad1a9a23b0">
+
+To restart cron with ```sudo systemctl enable cron``` and ```sudo systemctl start cron```
+
+<img width="1201" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/9342b2e5-ab07-4a1e-842f-3594de275b69">
+
+
 ## 10- Tester 🆗
 
 Check that you didn't forget anything! Own tester to check that the installation and configuration has been carried out successfully.
