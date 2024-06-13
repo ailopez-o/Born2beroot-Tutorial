@@ -476,21 +476,22 @@ difok=7 ➤ The password it have to containt at least seven diferent characters 
 
 enforce_for_root ➤ We will implement this password policy to root.
 
-6 ◦ Now this password policy only applies to new users created later or change a new password. For the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
+6 ◦ Now this password policy applies to new users created later or change a new password. But for the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
 
-Use command: ```sudo chage -l <username>``` to check the password of a user
+Use command: ```sudo chage -l <username>``` to check the password of root and login user.
 
-The defualt minimun days between password change is 0, and maximun days is 9999. So it is different with our password policy.
+As the picture below, the minimun maximun days between password change are still defalut, because we create these two users before we create the password policy.
 
-need a clip here
+<img width="862" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e95431bd-8f7c-427e-a609-115fa5a306d8">
 
-Use command: ```sudo chage -m <time> <username>``` and ```sudo chage -M <time> <username>``` to modify the days between password change.
+We need to use command: ```sudo chage -m <time> <username>``` and ```sudo chage -M <time> <username>``` to modify the days between password change.
 
 -m is minimun days, should be 2 days; -M is maximun days, shoule be 30 days.
 
 Then check it again.
 
-need a clip here
+<img width="866" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/08d01b36-5c37-4dab-8cff-181981b2a199">
+
 
 ### 4.6 Connecting via SSH 🗣
 
