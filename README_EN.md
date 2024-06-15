@@ -450,9 +450,7 @@ enforce_for_root
 ```
 ➤ This is how the line must be↙️
 
-**_this image miss lcredi=-1, be careful when you write this_**
-
-<img width="1127" alt="Captura de pantalla 2022-07-16 a las 3 34 33" src="https://user-images.githubusercontent.com/66915274/179329511-0619183a-8ccc-456b-8f27-3962fc542cc3.png">
+<img width="1047" alt="Screen Shot 2023-01-03 at 7 41 57 PM" src="https://user-images.githubusercontent.com/66915274/210420896-8274b75b-86e4-4fba-9a14-ca838b61c2e6.png">
 
 ➤ This is how the file must look ↙️
 
