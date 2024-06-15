@@ -17,7 +17,7 @@ This guide has versions in different languages. Choose the one you prefer.
    
    	2.1 [Instalación de la máquina con Virtual Box 📦](#2-1-instalación-de-la-máquina-con-virtual-box-)
 
-   	2.2 [Instalación de la máquina con VMware ☁️](#2-2-instalación-de-la-máquina-con-vmware-%EF%B8%8F)
+   	2.2 [Instalación de la máquina con VMware ☁️](#2-2-instalación-de-la-máquina-con-vmware-)
    
 4. [Instalación Debian 🌀](#3--instalación-debian-)
 5. [Configuración de la máquina virtual ⚙️](#4-configuración-de-la-máquina-virtual-%EF%B8%8F)
@@ -118,7 +118,7 @@ Para dirigirte a la Instalación de Debian directamente [Click aquí](#3--instal
 <br>
 <br>
 
-### 2-2 Instalación de la máquina con re ☁️
+### 2-2 Instalación de la máquina con VMware ☁️
 
 1 ◦ Debemos abrir re y pinchar sobre ```New```.
 
