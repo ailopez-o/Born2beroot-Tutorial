@@ -450,6 +450,8 @@ enforce_for_root
 ```
 ➤ This is how the line must be↙️
 
+**_this image miss lcredi=-1, be careful when you write this_**
+
 <img width="1127" alt="Captura de pantalla 2022-07-16 a las 3 34 33" src="https://user-images.githubusercontent.com/66915274/179329511-0619183a-8ccc-456b-8f27-3962fc542cc3.png">
 
 ➤ This is how the file must look ↙️
@@ -473,6 +475,23 @@ reject_username ➤ The password can not contain the username inside itself.
 difok=7 ➤ The password it have to containt at least seven diferent characters from the last password ussed. 
 
 enforce_for_root ➤ We will implement this password policy to root.
+
+6 ◦ Now this password policy applies to new users created later or change a new password. But for the root user and login user we create at the beginning, we need to manually change the time setting of days between password chagne.
+
+Use command: ```sudo chage -l <username>``` to check the password of root and login user.
+
+As the picture below, the minimun maximun days between password change are still defalut, because we create these two users before we create the password policy.
+
+<img width="862" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e95431bd-8f7c-427e-a609-115fa5a306d8">
+
+We need to use command: ```sudo chage -m <time> <username>``` and ```sudo chage -M <time> <username>``` to modify the days between password change.
+
+-m is minimun days, should be 2 days; -M is maximun days, shoule be 30 days.
+
+Then check it again.
+
+<img width="866" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/08d01b36-5c37-4dab-8cff-181981b2a199">
+
 
 ### 4.6 Connecting via SSH 🗣
 
@@ -1139,9 +1158,15 @@ Brief description of all types of partitions:
 
 3 ◦ Once we are in the path /var/www/ we must download the latest version of WordPress. As my native language is Spanish I will select the latest version in Spanish. We will use the following command: ```sudo wget https://es.wordpress.org/latest-es_ES.zip```.
 
+_**if you want an English version, the link is https://en-gb.wordpress.org/latest-en_GB.zip**_
+
+_**So use command:**_ ```sudo wget https://en-gb.wordpress.org/latest-en_GB.zip```
+
 <img width="779" alt="Screen Shot 2022-11-18 at 2 47 00 PM" src="https://user-images.githubusercontent.com/66915274/202719349-442e9fd5-f96a-48af-8d7a-ea8a91a4d380.png">
 
 4 ◦ Unzip the file you just downloaded with the command ```sudo unzip latest-en_US.zip```.
+
+_**For English version:**_```sudo unzip latest-en_GB.zip```
 
 <img width="444" alt="Screen Shot 2022-11-18 at 2 47 25 PM" src="https://user-images.githubusercontent.com/66915274/202719435-99d6af72-98f4-47b0-befb-0f3e45db4520.png">
 
@@ -1622,6 +1647,37 @@ Si queremos que vuelva a ejecutarse:
 ```sudo /etc/init.d/cron start```
 
 <img width="483" alt="Screen Shot 2022-11-24 at 3 27 38 PM" src="https://user-images.githubusercontent.com/66915274/203807970-8fc69a39-6d10-4e64-9be1-eb49c4bf95f8.png">
+
+_**if the command is not work (not work in my VM), there is another way match with correction sheet better**_
+
+Use ```sudo service cron status``` to check the current status of cron, it should be like: (see the green enabled and active)
+
+<img width="1201" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/74ed50b7-01f7-47c8-b941-74e0ffd616df">
+
+If you want to stop cron, the command is ```sudo systemctl stop cron```, check cron status as:(inactive)
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e507f381-1ac6-457e-a832-39fcae19113e">
+
+Now the cron will stop temporarily, if you reboot VM, the cron will restart. 
+
+Or use command to restart it: ```sudo systemctl start cron``` :
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/800bc3b9-7301-4c66-87a6-318a57a7567c">
+
+In evaluation, you may need to stop the cron forever, and after reboot VM, cron should remain disabled. 
+
+To do this, use command: ```sudo systemctl disable cron```, it will be disabled but active, because I didn't stop cron since now.
+
+<img width="1200" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/d0dd42df-36af-478e-92bb-4b5a61022a3a">
+
+Then if you reboot VM, cron.service will be disabled and inactive.
+
+<img width="983" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/45cafbd0-e07b-44ec-9428-41ad1a9a23b0">
+
+To restart cron with ```sudo systemctl enable cron``` and ```sudo systemctl start cron```
+
+<img width="1201" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/9342b2e5-ab07-4a1e-842f-3594de275b69">
+
 
 ## 10- Tester 🆗
 
