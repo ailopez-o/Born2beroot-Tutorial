@@ -17,7 +17,7 @@ This guide has versions in different languages. Choose the one you prefer.
    
    	2.1 [Instalación de la máquina con Virtual Box 📦](#2-1-instalación-de-la-máquina-con-virtual-box-)
 
-   	2.2 [Instalación de la máquina con VMware ☁️](#2-2-instalación-de-la-máquina-con-vmware-)
+   	2.2 [Instalación de la máquina con VMware ☁️](#2-2-instalación-de-la-máquina-con-vmware-%EF%B8%8F)
    
 4. [Instalación Debian 🌀](#3--instalación-debian-)
 5. [Configuración de la máquina virtual ⚙️](#4-configuración-de-la-máquina-virtual-%EF%B8%8F)
