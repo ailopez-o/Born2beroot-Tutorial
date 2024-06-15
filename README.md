@@ -500,6 +500,8 @@ enforce_for_root
 ```
 ➤ Así debe ser la línea ↙️
 
+Falta añadir lcredit=-1 en la captura
+
 <img width="1047" alt="Screen Shot 2023-01-03 at 7 41 57 PM" src="https://user-images.githubusercontent.com/66915274/210420896-8274b75b-86e4-4fba-9a14-ca838b61c2e6.png">
 
 ➤ Así se debe ver en el fichero ↙️
@@ -523,6 +525,13 @@ reject_username ➤ No puede contener el nombre del usuario.
 difok=7 ➤  Debe tener al menos 7 caracteres que no sean parte de la antigua contraseña. 
 
 enforce_for_root ➤ Implementaremos esta política para el usuario root.
+
+6 ◦ La política de contraseñas que acabamos de implementar afecta solo a los usuarios nuevos. Por lo tanto, es necesario actualizar las cuentas de los usuarios que fueron creadas antes de esta política para que cumplan con los nuevos requisitos de seguridad. Para comprobar si el usuario no cumple con la política haremos uso del comando ```sudo chage -l username```.
+
+Asi se veria 
+
+
+
 
 ### 4-6 Conectarse vía SSH 🗣
 
