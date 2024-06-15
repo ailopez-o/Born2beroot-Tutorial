@@ -528,9 +528,21 @@ enforce_for_root ➤ Implementaremos esta política para el usuario root.
 
 6 ◦ La política de contraseñas que acabamos de implementar afecta solo a los usuarios nuevos. Por lo tanto, es necesario actualizar las cuentas de los usuarios que fueron creadas antes de esta política para que cumplan con los nuevos requisitos de seguridad. Para comprobar si el usuario no cumple con la política haremos uso del comando ```sudo chage -l username```.
 
-Asi se veria 
+Asi se veria, debemos comprobar que los dias 
 
+<img width="862" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e95431bd-8f7c-427e-a609-115fa5a306d8">
 
+7 ◦ Si vemos que dicho usuario no cumple con la politica debemos modificar el numero minimo y maximo de dias entre cambios de contraseña, para ello usaremos el siguiente comando: ```sudo chage -m <time> <username>``` y ```sudo chage -M <time> <username>```. 
+
+-m is para el numero minimo de dias y -M para el numero maximo.
+
+Asi se deben de ver los comandos
+
+![image](https://github.com/gemartin99/Born2beroot-Tutorial/assets/66915274/cb5c8574-8523-480e-9d02-41e103c4910c)
+
+Una vez aplicados los cambios asi se deberia ver:
+
+![image](https://github.com/gemartin99/Born2beroot-Tutorial/assets/66915274/c5df523d-45af-4b8f-a21e-a02b1173b4f8)
 
 
 ### 4-6 Conectarse vía SSH 🗣
