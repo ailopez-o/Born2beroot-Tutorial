@@ -500,8 +500,6 @@ enforce_for_root
 ```
 ➤ Así debe ser la línea ↙️
 
-Falta añadir lcredit=-1 en la captura
-
 <img width="1047" alt="Screen Shot 2023-01-03 at 7 41 57 PM" src="https://user-images.githubusercontent.com/66915274/210420896-8274b75b-86e4-4fba-9a14-ca838b61c2e6.png">
 
 ➤ Así se debe ver en el fichero ↙️
