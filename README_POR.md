@@ -463,6 +463,25 @@ difok=7 ➤  Deve ter pelo menos 7 caracteres que não façam parte da senha ant
 
 enforce_for_root ➤ Iremos implementar esta política para o utilizador de raiz.
 
+6 ◦ A política de palavras-passe recentemente implementada afecta apenas os novos utilizadores. Portanto, é necessário atualizar as contas de utilizador que foram criadas antes desta política para cumprir os novos requisitos de segurança. Para verificar se o utilizador não está em conformidade com a política, vamos utilizar o comando ```sudo chage -l username```.
+
+É assim que se apresenta, devemos verificar se os dias
+
+<img width="862" alt="image" src="https://github.com/yingzhan11/Born2beroot-Tutorial/assets/153290203/e95431bd-8f7c-427e-a609-115fa5a306d8">
+
+7 ◦ Se verificarmos que este utilizador não cumpre a política devemos modificar o número mínimo e máximo de dias entre alterações de password, para isso vamos utilizar o seguinte comando: ```sudo chage -m <time> <username> y sudo chage -M <time> <username>```.
+
+-m é para o número mínimo de dias e -M para o número máximo de dias.
+
+Os comandos devem ter o seguinte aspeto
+
+![image](https://github.com/gemartin99/Born2beroot-Tutorial/assets/66915274/cb5c8574-8523-480e-9d02-41e103c4910c)
+
+Quando as alterações tiverem sido aplicadas, deverá ter o seguinte aspeto:
+
+![image](https://github.com/gemartin99/Born2beroot-Tutorial/assets/66915274/c5df523d-45af-4b8f-a21e-a02b1173b4f8)
+
+
 ### 4-6 Conectar via SSH 🗣
 
 1 ◦ Para ligar via SSH temos de fechar a máquina, abrir a VirtualBox e clicar na configuração.
