@@ -1636,13 +1636,13 @@ We modify the first parameter, instead of 10 we change it to 1.
 
 <img width="638" alt="Screen Shot 2022-11-24 at 6 31 44 AM" src="https://user-images.githubusercontent.com/66915274/203701944-393bd687-8b9c-4643-9d59-4789361e314d.png">
 
-22 ◦ Translate English: Finally, make the script stop running when the server has started, but without modifying the script.
+22 ◦ Finally, make the script stop running when the server has started, but without modifying the script.
 
 ```sudo /etc/init.d/cron stop```
 
 <img width="483" alt="Screen Shot 2022-11-24 at 3 25 53 PM" src="https://user-images.githubusercontent.com/66915274/203807610-d87124f2-47ca-4546-8037-b904e8bcf5d1.png">
 
-Si queremos que vuelva a ejecutarse:
+If we want it to run again:
 
 ```sudo /etc/init.d/cron start```
 
