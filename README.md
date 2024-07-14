@@ -344,7 +344,7 @@ Volvemos a poner el nombre de usuario.
 
 <img width="404" alt="Screen Shot 2022-10-26 at 6 34 09 PM" src="https://user-images.githubusercontent.com/66915274/198083377-bd4162c6-317b-474f-8bc4-e542be4dcfde.png">
 
-7 ◦ Una vez los hayamos introducido para chequear que todo se haya hecho correctamente podemos ejecutar el comando ```getent group nombre_grupo``` o también podemos editar el fichero /etc/group ```nano /etc/group``` y en los grupos ```sudo``` y ```login42``` deberá aparecer nuestro usuario.
+7 ◦ Una vez los hayamos introducido para chequear que todo se haya hecho correctamente podemos ejecutar el comando ```getent group nombre_grupo``` o también podemos editar el fichero /etc/group ```nano /etc/group``` y en los grupos ```sudo``` y ```user42``` deberá aparecer nuestro usuario.
 
 <img width="328" alt="Screen Shot 2022-10-26 at 6 35 50 PM" src="https://user-images.githubusercontent.com/66915274/198083739-ad16e388-69c3-41d1-a061-e55dd66b0d14.png">
 
