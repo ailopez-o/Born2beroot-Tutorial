@@ -1697,7 +1697,7 @@ Intentamos conectarnos por SSH con el usuario root, pero no tenemos permisos.
 
 <img width="1377" alt="Screen Shot 2022-11-24 at 5 44 07 AM" src="https://user-images.githubusercontent.com/66915274/203696165-f1107b33-0c7e-4cce-8d04-56b845637ec8.png">
 
-Nos conectamos por SSH con el nuevo usuario con el comando ```ssh newuser@localhost -p 4242```
+Nos conectamos por SSH con el nuevo usuario con el comando ```ssh newuser@localhost -p [used port in host]```
 
 <img width="1384" alt="Screen Shot 2022-11-24 at 5 48 06 AM" src="https://user-images.githubusercontent.com/66915274/203696612-f2c98ebf-be55-4830-b5ea-b0ac98de7c65.png">
 
