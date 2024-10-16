@@ -565,7 +565,7 @@ En este caso yo habia puesto el ```4242``` en el anfitrion pero si la maquina re
 
 ![Screenshot from 2024-10-16 12-22-46](https://github.com/user-attachments/assets/189d7b9c-843e-4c1c-a7c2-81484e3a4955)
 
-Probamos con el puerto ```2222``` para ver si ya se utilizando. Como no nos devuelve nada el comando significa que no esta siendo utilizado. Esta configuracion es diferente para cada campus ya que quizas en tu campus ya que igual utilizan algunos puertos para correr ciertos servicios. Una vez encontremos un puerto libre pues sera el que utilizaremos para el reenvio.
+Probamos con el puerto ```2222``` para ver si ya se esta utilizando. Como no nos devuelve nada el comando significa que no esta siendo utilizado. Esta configuracion es diferente para cada campus ya que quizas en tu campus ya que igual utilizan algunos puertos para correr ciertos servicios. Una vez encontremos un puerto libre pues sera el que utilizaremos para el reenvio.
 
 ![Screenshot from 2024-10-16 12-23-54](https://github.com/user-attachments/assets/5193bf46-4352-4131-bb70-1a0fb1b976d9)
 
@@ -575,6 +575,8 @@ Actualizamos nuestro reenvio de puertos.
 
 
 ➤ Para poder conectarnos a la máquina virtual desde la real debemos abrir un terminal en la máquina real y escribir ```ssh gemartin@localhost -p [used port in host]``` nos pedirá la clave del usuario y una vez la introduzcamos ya nos saldrá el login en verde y eso significa que estaremos conectados.
+
+🚨 Si el puerto ```4242``` ya se estaba usando debes poner el puerto que estes utilizando para el reenvio a la maquina virtual 🚨
 
 <img width="517" alt="Screen Shot 2022-10-27 at 12 40 23 AM" src="https://user-images.githubusercontent.com/66915274/198174777-28f7793b-273b-43ce-b1c2-4a890353cb8c.png">
 
