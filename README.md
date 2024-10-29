@@ -1216,9 +1216,10 @@ Descripción breve de todos los tipos de particiones:
 
 <img width="460" alt="Screen Shot 2022-10-27 at 4 15 45 AM" src="https://user-images.githubusercontent.com/66915274/198175075-da6833f1-2360-4e08-b708-99f920b8215c.png">
 
-4 ◦ Añadimos la regla que incluya el puerto 80. Si no recuerdas como se añadían reglas en el reenvío de puertos. Configuración de la máquina → Red → Reenvío de puertos → Replicar la captura.
+4 ◦ Para configurar el reenvío de puertos, añadimos una regla que incluya el puerto 8086 en el host y lo redirija al puerto 80 en la máquina invitada. Si no recuerdas cómo agregar reglas de reenvío de puertos Configuración de la máquina → Red → Reenvío de puertos → Replicar la captura.
 
-<img width="877" alt="Screen Shot 2022-11-18 at 2 49 56 PM" src="https://user-images.githubusercontent.com/66915274/202720044-d7a51add-c5ee-4da4-9057-258e47cfd036.png">
+![image](https://github.com/user-attachments/assets/a39f6868-79eb-4c41-a18f-d86eac4b2aad)
+
 
 ### WordPress 
 
@@ -1359,9 +1360,11 @@ Hay que remplazarlos por los valores que hemos puesto anteriormente cuando creá
 
 ![image](https://user-images.githubusercontent.com/66915274/230748835-9b44222d-e978-4a74-a501-e993c528a2a5.png)
 
-7 ◦ Una vez ya hemos completado los pasos anteriores podemos volver a dirigirnos a nuestro navegador y escribiremos ```localhost```. Nos deberá salir lo siguiente:
+7 ◦ Una vez ya hemos completado los pasos anteriores podemos volver a dirigirnos a nuestro navegador y escribiremos ```localhost:8086```. Esto lo que hará será conectarse a nuestra máquina virtual por el puerto 80, donde está corriendo el servidor de WordPress. La conexión al puerto 80 se realiza gracias al reenvío de puertos. Nos deberá salir lo siguiente:
 
-<img width="674" alt="Screen Shot 2023-04-01 at 8 49 00 PM" src="https://user-images.githubusercontent.com/66915274/229308949-6224a7c8-2dda-414a-b313-c14e981aca01.png">
+![image](https://github.com/user-attachments/assets/97a91938-5b37-4433-a6cd-4e852d5bb5d5)
+
+![image](https://github.com/user-attachments/assets/ae692562-dfdf-4dde-8e69-537e0426cd3a)
 
 <img width="1075" alt="Screen Shot 2023-04-01 at 8 00 38 PM" src="https://user-images.githubusercontent.com/66915274/229308962-d39b1b6b-62cc-49d1-ad13-a016d6e73683.png">
 
