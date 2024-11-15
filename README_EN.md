@@ -505,7 +505,7 @@ Then check it again.
 
 <img width="585" alt="Captura de pantalla 2022-07-18 a las 10 21 24" src="https://user-images.githubusercontent.com/66915274/179471855-913a684d-c7b0-43e2-9e01-d2c954fe75a4.png">
 
-4 ◦ Lastly we will add the ```4242``` port to host and client. The IP's are not required. We will click accept so changes can be saved.
+4 ◦ Lastly we will add the ```4242``` port to host (some situations this port at the host PC of 42School is already used for other services, so try another port for example "4243" and test again) and client. The IP's are not required. We will click accept so changes can be saved.
 
 <img width="588" alt="Captura de pantalla 2022-07-18 a las 10 22 29" src="https://user-images.githubusercontent.com/66915274/179472105-5942b3ec-5c29-4d49-a00e-67f9cde289e8.png">
 
