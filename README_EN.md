@@ -1332,7 +1332,15 @@ You have to replace them with the values that we have previously set when we cre
 
 ```wget -O - https://repo.litespeed.sh | sudo bash```
 
-As the command is long, I connected via ssh.
+(If you received a error similar to: ..."curl: command not found", you need install the application "curl" for able to running the script), so run this command below: 
+
+```sudo apt install curl -y```
+
+After that run again the script to install OpenLiteSpeed:
+
+```wget -O - https://repo.litespeed.sh | sudo bash```
+
+As the command is long, I connected via ssh:
 
 <img width="1129" alt="Screen Shot 2022-11-25 at 3 05 49 AM" src="https://user-images.githubusercontent.com/66915274/203885808-b4e0ff9a-580c-4121-b06f-ec229e514df9.png">
 
