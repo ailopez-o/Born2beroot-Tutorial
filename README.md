@@ -1491,7 +1491,7 @@ Esto es algo personal para cada uno, mi opinión: El propio subject explica que 
 
 ### ▪️ Diferencias básicas entre Rocky y Debian
 
-| Aspecto               | Debian                    | Rocky Linux               |
+| Aspecto               | Debian                    | Rocky               	|
 |------------------------|---------------------------|---------------------------|
 | **Base**              | Independiente             | RHEL                      |
 | **Gestor de Paquetes**| APT (.deb)                | DNF (.rpm)                |
