@@ -1491,7 +1491,19 @@ Esto es algo personal para cada uno, mi opinión: El propio subject explica que 
 
 ### ▪️ Diferencias básicas entre Rocky y Debian
 
-![182516961-c3e4da77-2db8-4737-a68f-27b033908705 (1) (1)](https://user-images.githubusercontent.com/66915274/182517306-edb92eac-cba4-444a-83f8-9692bac69231.png)
+| Aspecto               | Debian                    | Rocky Linux               |
+|------------------------|---------------------------|---------------------------|
+| **Base**              | Independiente             | RHEL                      |
+| **Gestor de Paquetes**| APT (.deb)                | DNF (.rpm)                |
+| **Estabilidad**       | Flexible 		    | Muy estable (empresas)    |
+| **Soporte**           | 3-5 años                  | 10 años                   |
+| **Uso Típico**        | General                   | Servidores empresariales  |
+
+### Resumen
+
+- Debian es más versátil y comunitario.
+
+- Rocky es una opción robusta y empresarial con soporte a largo plazo.
 
 ### ▪️ Cuál es el propósito de las máquinas virtuales❓
 
