@@ -61,9 +61,9 @@ This guide has versions in different languages. Choose the one you prefer.
 
 ## 2- Instalación de la máquina 🛠
 
-Según el subject es OBLIGATORIO hacer este proyecto con Virtual Box. Si por algún problema técnico en tu campus no está disponible Virtual Box, este tutorial cuenta con una versión para re.
+Según el subject es OBLIGATORIO hacer este proyecto con Virtual Box. Si por algún problema técnico en tu campus no está disponible Virtual Box, este tutorial cuenta con una versión para vmware.
 
-Si quieres hacer la instalación con re haz [Click aquí](#2-2-instalación-de-la-máquina-con-re-%EF%B8%8F)
+Si quieres hacer la instalación con vmware haz [Click aquí](https://github.com/gemartin99/Born2beroot-Tutorial/edit/main/README.md#2-2-instalaci%C3%B3n-de-la-m%C3%A1quina-con-vmware-%EF%B8%8F)
 
 ### 2-1 Instalación de la máquina con Virtual Box 📦
 
@@ -120,7 +120,7 @@ Para dirigirte a la Instalación de Debian directamente [Click aquí](#3--instal
 
 ### 2-2 Instalación de la máquina con VMware ☁️
 
-1 ◦ Debemos abrir re y pinchar sobre ```New```.
+1 ◦ Debemos abrir vmware y pinchar sobre ```New```.
 
 <img width="995" alt="Screen Shot 2023-12-05 at 8 56 46 PM" src="https://github.com/gemartin99/Born2beroot-Tutorial/assets/66915274/7a3a1afb-7c8d-4b11-b1a5-8d2633061822">
 
