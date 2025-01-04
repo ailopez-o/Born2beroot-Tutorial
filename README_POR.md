@@ -1399,9 +1399,23 @@ Software que simula um sistema informático e pode executar programas como se fo
 
 Isto é uma coisa pessoal para todos, a minha opinião: o próprio assunto explica que é mais fácil fazê-lo no Debian e se procurar documentação/tutoriais há muitos e todos eles foram feitos no debian.
 
-### ▪️ Diferenças básicas entre Rocky e Debian
+### ▪️ Diferenças básicas entre Debian e Rocky
 
-![182516961-c3e4da77-2db8-4737-a68f-27b033908705 (1) (1)](https://user-images.githubusercontent.com/66915274/182517306-edb92eac-cba4-444a-83f8-9692bac69231.png)
+| Aspecto              | Debian                    | Rocky                     |
+|----------------------|---------------------------|---------------------------|
+| **Base**             | Independente              | RHEL                      |
+| **Gerenciador de Pacotes** | APT (.deb)             | DNF (.rpm)                |
+| **Estabilidade**     | Flexível                  | Muito estável (empresas)  |
+| **Suporte**          | 3-5 anos                  | 10 anos                   |
+| **Uso Típico**       | Geral                     | Servidores empresariais   |
+
+
+### Resumo
+
+- Debian é mais versátil e comunitário.
+
+- Rocky é uma opção robusta e voltada para empresas, com suporte a longo prazo.
+
 
 ### ▪️ Qual é a finalidade das máquinas virtuais❓
 
