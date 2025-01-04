@@ -63,7 +63,7 @@ This guide has versions in different languages. Choose the one you prefer.
 
 Según el subject es OBLIGATORIO hacer este proyecto con Virtual Box. Si por algún problema técnico en tu campus no está disponible Virtual Box, este tutorial cuenta con una versión para vmware.
 
-Si quieres hacer la instalación con vmware haz [Click aquí](https://github.com/gemartin99/Born2beroot-Tutorial/edit/main/README.md#2-2-instalaci%C3%B3n-de-la-m%C3%A1quina-con-vmware-%EF%B8%8F)
+Si quieres hacer la instalación con vmware haz [Click aquí](https://github.com/gemartin99/Born2beroot-Tutorial/tree/main?tab=readme-ov-file#2-2-instalaci%C3%B3n-de-la-m%C3%A1quina-con-vmware-%EF%B8%8F)
 
 ### 2-1 Instalación de la máquina con Virtual Box 📦
 
