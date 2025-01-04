@@ -1417,9 +1417,22 @@ It is software that simulates a computer system and can run programs as if it we
 
 This is a personal thing for everyone, my opinion: The subject itself explains that it is easier to do it in Debian and if you look for documentation/tutorials there are many and all of them have been done in debian.
 
-### ▪️ Basic differences between CentOS and Debian
+### ▪️ Basic differences between Debian and Rocky
 
-![182516961-c3e4da77-2db8-4737-a68f-27b033908705 (1) (1)](https://user-images.githubusercontent.com/66915274/182517306-edb92eac-cba4-444a-83f8-9692bac69231.png)
+| Aspect               | Debian                    | Rocky                     |
+|----------------------|---------------------------|---------------------------|
+| **Base**             | Independent               | RHEL                      |
+| **Package Manager**  | APT (.deb)                | DNF (.rpm)                |
+| **Stability**        | Flexible                  | Very stable (enterprise)  |
+| **Support**          | 3-5 years                 | 10 years                  |
+| **Typical Use**      | General                   | Enterprise servers        |
+
+### Summary
+
+- Debian is more versatile and community-driven.
+
+- Rocky is a robust and enterprise-oriented option with long-term support.
+
 
 ### ▪️ What is the purpose of virtual machines❓
 
