@@ -531,7 +531,7 @@ For the architecture of the SO to be shown, you will use the command ```uname -a
 
 For the number of fisical cores to be shown we will use the file /proc/cpuinfo, which give us information about the CPU: its type, brand, model, performance, etc. We will use the command ```grep “physical id” /proc/cpuinfo | sort -u | wc -l``` with the grep command we will search inside the “physical id” file, then with sort -u we will eliminate duplicates, ensuring that each physical CPU is counted only once, finally, with wc -l we will count the lines of the grep result. 
 
-<img width="596" alt="Screen Shot 2022-10-27 at 4 50 49 PM" src="https://user-images.githubusercontent.com/66915274/198322799-4bf2131e-7fba-4c9e-8d1b-bb9cc1b89e76.png">
+![image](https://github.com/user-attachments/assets/d7b4edbe-43d8-4a89-856a-c96831788c25)
 
 ### 5-3 Virtual Cores
 
