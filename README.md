@@ -709,7 +709,7 @@ incrementar el número de ejecuciones de sudo.
 arch=$(uname -a)
 
 # CPU PHYSICAL
-cpuf=$(grep "physical id" /proc/cpuinfo | wc -l)
+cpuf=$(grep "physical id" /proc/cpuinfo | sort -u | wc -l)
 
 # CPU VIRTUAL
 cpuv=$(grep "processor" /proc/cpuinfo | wc -l)
