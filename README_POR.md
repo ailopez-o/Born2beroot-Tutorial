@@ -520,10 +520,9 @@ Para ver a arquitectura do SO e a sua versão do kernel utilizaremos o comando `
 
 ### 5-2 Núcleos físicos
 
-Para exibir o número de núcleos físicos, faremos uso do ficheiro /proc/cpuinfo que fornece informações sobre o processador: o seu tipo, marca, modelo, desempenho, etc. Utilizaremos o comando ```grep "physical id" /proc/cpuinfo | wc -l``` com o comando grep procuraremos dentro do ficheiro "physical id" e com wc -l contaremos as linhas do resultado do grep. Fazemo-lo porque a forma de quantificar os núcleos não é muito comum. Se houver um processador, marcará 0 e se houver mais do que um processador, mostrará toda a informação do processador separadamente contando os processadores usando notação zero. Desta forma, contamos simplesmente o número de linhas, pois é mais conveniente quantificá-lo desta forma.
+Para exibir o número de núcleos físicos, faremos uso do ficheiro /proc/cpuinfo que fornece informações sobre o processador: o seu tipo, marca, modelo, desempenho, etc. Vamos utilizar o comando grep “physical id” /proc/cpuinfo | sort -u | wc -l com o comando grep vamos procurar dentro do ficheiro “physical id”, depois com sort -u vamos remover os duplicados, certificando-nos que cada CPU física é contada apenas uma vez, finalmente, com wc -l vamos contar as linhas do resultado do grep. Fazemo-lo porque a forma de quantificar os núcleos não é muito comum. Se houver um processador, marcará 0 e se houver mais do que um processador, mostrará toda a informação do processador separadamente contando os processadores usando notação zero. Desta forma, contamos simplesmente o número de linhas, pois é mais conveniente quantificá-lo desta forma.
 
-<img width="596" alt="Screen Shot 2022-10-27 at 4 50 49 PM" src="https://user-images.githubusercontent.com/66915274/198322799-4bf2131e-7fba-4c9e-8d1b-bb9cc1b89e76.png">
-
+![image](https://github.com/user-attachments/assets/d7b4edbe-43d8-4a89-856a-c96831788c25)
 
 ### 5-3 Núcleos virtuais
 
@@ -621,7 +620,7 @@ aumentar o número de execuções de sudo.
 arch=$(uname -a)
 
 # CPU PHYSICAL
-cpuf=$(grep "physical id" /proc/cpuinfo | wc -l)
+cpuf=$(grep "physical id" /proc/cpuinfo | sort -u | wc -l)
 
 # CPU VIRTUAL
 cpuv=$(grep "processor" /proc/cpuinfo | wc -l)
