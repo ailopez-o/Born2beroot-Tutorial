@@ -4,7 +4,7 @@
 arch=$(uname -a)
 
 # CPU PHYSICAL
-cpuf=$(grep "physical id" /proc/cpuinfo | wc -l)
+cpuf=$(grep "physical id" /proc/cpuinfo | sort -u | wc -l)
 
 # CPU VIRTUAL
 cpuv=$(grep "processor" /proc/cpuinfo | wc -l)
@@ -16,7 +16,7 @@ ram_percent=$(free --mega | awk '$1 == "Mem:" {printf("%.2f"), $3/$2*100}')
 
 # DISK
 disk_total=$(df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_t += $2} END {printf ("%.1fGb\n"), disk_t/1024}')
-disk_use=$(df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} END {print disk_u}')
+disk_use=$(df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} END {printf ("%.1fGb\n"), disk_u/1024}')
 disk_percent=$(df -m | grep "/dev/" | grep -v "/boot" | awk '{disk_u += $3} {disk_t+= $2} END {printf("%d"), disk_u/disk_t*100}')
 
 # CPU LOAD
