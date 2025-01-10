@@ -529,7 +529,7 @@ For the architecture of the SO to be shown, you will use the command ```uname -a
 
 ### 5-2 Physical Cores
 
-For the number of fisical cores to be shown we will use the file /proc/cpuinfo, which give us information about the CPU: its type, brand, model, performance, etc. We will use ```grep "physical id" /proc/cpuinfo | wc -l``` with the command grep looking inside the file "physical id" and with wc -l to count the line of the grep output. 
+For the number of fisical cores to be shown we will use the file /proc/cpuinfo, which give us information about the CPU: its type, brand, model, performance, etc. We will use the command ```grep “physical id” /proc/cpuinfo | sort -u | wc -l``` with the grep command we will search inside the “physical id” file, then with sort -u we will eliminate duplicates, ensuring that each physical CPU is counted only once, finally, with wc -l we will count the lines of the grep result. 
 
 <img width="596" alt="Screen Shot 2022-10-27 at 4 50 49 PM" src="https://user-images.githubusercontent.com/66915274/198322799-4bf2131e-7fba-4c9e-8d1b-bb9cc1b89e76.png">
 
@@ -627,7 +627,7 @@ To obtain the number of commands executed with sudo, we will use the ```journacl
 arch=$(uname -a)
 
 # CPU PHYSICAL
-cpuf=$(grep "physical id" /proc/cpuinfo | wc -l)
+cpuf=$(grep "physical id" /proc/cpuinfo | sort -u | wc -l)
 
 # CPU VIRTUAL
 cpuv=$(grep "processor" /proc/cpuinfo | wc -l)
