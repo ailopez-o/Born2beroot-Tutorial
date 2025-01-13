@@ -2,8 +2,6 @@
 
 # Born2beroot-Tutorial 🖥🇪🇸
 
-## By gemartin, with this guide your project will be 'clean'.
-
 This guide has versions in different languages. Choose the one you prefer.
 
 ### English version 🇬🇧
@@ -1776,3 +1774,4 @@ Comprueba que no te hayas dejado nada! Tester propio para checkear que la instal
 [AQUÍ](https://profile.intra.42.fr/users/gemartin)
 
 
+By gemartin, with this guide your project will be 'clean'.
