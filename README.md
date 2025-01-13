@@ -2,7 +2,7 @@
 
 # Born2beroot-Tutorial 🖥🇪🇸
 
-## By gemartin, with this guide your proyet will be 'clean'.
+## By gemartin, with this guide your project will be 'clean'.
 
 This guide has versions in different languages. Choose the one you prefer.
 
